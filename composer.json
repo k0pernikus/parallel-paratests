@@ -20,5 +20,8 @@
     "psr-4": {
       "Kopernikus\\ParallelParatests\\Tests\\": "tests/"
     }
+  },
+  "scripts": {
+    "tests:parallel": "bash -c \"shopt -s globstar; paratest ./tests/**/*.php --functional\""
   }
 }
